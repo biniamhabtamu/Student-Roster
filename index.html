@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Roster</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <h1>Student Roster</h1>
+    <table id="studentTable">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Name</th>
+                <th>Biology (Sem 1)</th>
+                <th>Chemistry (Sem 1)</th>
+                <th>Math (Sem 1)</th>
+                <th>English (Sem 1)</th>
+                <th>Total (Sem 1)</th>
+                <th>Average (Sem 1)</th>
+                <th>Rank (Sem 1)</th>
+                <th>Biology (Sem 2)</th>
+                <th>Chemistry (Sem 2)</th>
+                <th>Math (Sem 2)</th>
+                <th>English (Sem 2)</th>
+                <th>Total (Sem 2)</th>
+                <th>Average (Sem 2)</th>
+                <th>Rank (Sem 2)</th>
+                <th>Overall Average</th>
+                <th>Overall Rank</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Sample Rows -->
+          <tr>
+                <td>1</td>
+                <td contenteditable="true">Student 1</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem1">0</td>
+                <td class="avg-sem1">0</td>
+                <td class="rank-sem1">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem2">0</td>
+                <td class="avg-sem2">0</td>
+                <td class="rank-sem2">0</td>
+                <td class="overall-avg">0</td>
+                <td class="overall-rank">0</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td contenteditable="true">Student 2</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem1">0</td>
+                <td class="avg-sem1">0</td>
+                <td class="rank-sem1">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem2">0</td>
+                <td class="avg-sem2">0</td>
+                <td class="rank-sem2">0</td>
+                <td class="overall-avg">0</td>
+                <td class="overall-rank">0</td>
+            </tr>
+          <tr>
+                <td>3</td>
+                <td contenteditable="true">Student 3</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem1">0</td>
+                <td class="avg-sem1">0</td>
+                <td class="rank-sem1">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem2">0</td>
+                <td class="avg-sem2">0</td>
+                <td class="rank-sem2">0</td>
+                <td class="overall-avg">0</td>
+                <td class="overall-rank">0</td>
+            </tr>
+          <tr>
+                <td>4</td>
+                <td contenteditable="true">Student 4</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem1">0</td>
+                <td class="avg-sem1">0</td>
+                <td class="rank-sem1">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem2">0</td>
+                <td class="avg-sem2">0</td>
+                <td class="rank-sem2">0</td>
+                <td class="overall-avg">0</td>
+                <td class="overall-rank">0</td>
+            </tr>
+          <tr>
+                <td>5</td>
+                <td contenteditable="true">Student 1</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem1">0</td>
+                <td class="avg-sem1">0</td>
+                <td class="rank-sem1">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem2">0</td>
+                <td class="avg-sem2">0</td>
+                <td class="rank-sem2">0</td>
+                <td class="overall-avg">0</td>
+                <td class="overall-rank">0</td>
+            </tr>
+          <tr>
+                <td>6</td>
+                <td contenteditable="true">Student 1</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem1">0</td>
+                <td class="avg-sem1">0</td>
+                <td class="rank-sem1">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem2">0</td>
+                <td class="avg-sem2">0</td>
+                <td class="rank-sem2">0</td>
+                <td class="overall-avg">0</td>
+                <td class="overall-rank">0</td>
+            </tr>
+          <tr>
+                <td>7</td>
+                <td contenteditable="true">Student 1</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem1">0</td>
+                <td class="avg-sem1">0</td>
+                <td class="rank-sem1">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem2">0</td>
+                <td class="avg-sem2">0</td>
+                <td class="rank-sem2">0</td>
+                <td class="overall-avg">0</td>
+                <td class="overall-rank">0</td>
+            </tr>
+          <tr>
+                <td>8</td>
+                <td contenteditable="true">Student 8</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem1">0</td>
+                <td class="avg-sem1">0</td>
+                <td class="rank-sem1">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem2">0</td>
+                <td class="avg-sem2">0</td>
+                <td class="rank-sem2">0</td>
+                <td class="overall-avg">0</td>
+                <td class="overall-rank">0</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td contenteditable="true">Student 9</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem1">0</td>
+                <td class="avg-sem1">0</td>
+                <td class="rank-sem1">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem2">0</td>
+                <td class="avg-sem2">0</td>
+                <td class="rank-sem2">0</td>
+                <td class="overall-avg">0</td>
+                <td class="overall-rank">0</td>
+            </tr>
+          <tr>
+                <td>10</td>
+                <td contenteditable="true">Student 10</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem1">0</td>
+                <td class="avg-sem1">0</td>
+                <td class="rank-sem1">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem2">0</td>
+                <td class="avg-sem2">0</td>
+                <td class="rank-sem2">0</td>
+                <td class="overall-avg">0</td>
+                <td class="overall-rank">0</td>
+            </tr>
+          <tr>
+                <td>11</td>
+                <td contenteditable="true">Student 11</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem1">0</td>
+                <td class="avg-sem1">0</td>
+                <td class="rank-sem1">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem2">0</td>
+                <td class="avg-sem2">0</td>
+                <td class="rank-sem2">0</td>
+                <td class="overall-avg">0</td>
+                <td class="overall-rank">0</td>
+            </tr>
+          <tr>
+                <td>12</td>
+                <td contenteditable="true">Student 12</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem1">0</td>
+                <td class="avg-sem1">0</td>
+                <td class="rank-sem1">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem2">0</td>
+                <td class="avg-sem2">0</td>
+                <td class="rank-sem2">0</td>
+                <td class="overall-avg">0</td>
+                <td class="overall-rank">0</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td contenteditable="true">Student 13</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem1">0</td>
+                <td class="avg-sem1">0</td>
+                <td class="rank-sem1">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem2">0</td>
+                <td class="avg-sem2">0</td>
+                <td class="rank-sem2">0</td>
+                <td class="overall-avg">0</td>
+                <td class="overall-rank">0</td>
+            </tr>
+          <tr>
+                <td>14</td>
+                <td contenteditable="true">Student 14</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem1">0</td>
+                <td class="avg-sem1">0</td>
+                <td class="rank-sem1">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem2">0</td>
+                <td class="avg-sem2">0</td>
+                <td class="rank-sem2">0</td>
+                <td class="overall-avg">0</td>
+                <td class="overall-rank">0</td>
+            </tr>
+          <tr>
+                <td>15</td>
+                <td contenteditable="true">Student 15</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem1">0</td>
+                <td class="avg-sem1">0</td>
+                <td class="rank-sem1">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem2">0</td>
+                <td class="avg-sem2">0</td>
+                <td class="rank-sem2">0</td>
+                <td class="overall-avg">0</td>
+                <td class="overall-rank">0</td>
+            </tr>
+          <tr>
+                <td>16</td>
+                <td contenteditable="true">Student 16</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem1">0</td>
+                <td class="avg-sem1">0</td>
+                <td class="rank-sem1">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem2">0</td>
+                <td class="avg-sem2">0</td>
+                <td class="rank-sem2">0</td>
+                <td class="overall-avg">0</td>
+                <td class="overall-rank">0</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td contenteditable="true">Student 17</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem1">0</td>
+                <td class="avg-sem1">0</td>
+                <td class="rank-sem1">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem2">0</td>
+                <td class="avg-sem2">0</td>
+                <td class="rank-sem2">0</td>
+                <td class="overall-avg">0</td>
+                <td class="overall-rank">0</td>
+            </tr>
+          <tr>
+                <td>18</td>
+                <td contenteditable="true">Student 18</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem1">0</td>
+                <td class="avg-sem1">0</td>
+                <td class="rank-sem1">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem2">0</td>
+                <td class="avg-sem2">0</td>
+                <td class="rank-sem2">0</td>
+                <td class="overall-avg">0</td>
+                <td class="overall-rank">0</td>
+            </tr>
+          <tr>
+                <td>19</td>
+                <td contenteditable="true">Student 19</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem1">0</td>
+                <td class="avg-sem1">0</td>
+                <td class="rank-sem1">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem2">0</td>
+                <td class="avg-sem2">0</td>
+                <td class="rank-sem2">0</td>
+                <td class="overall-avg">0</td>
+                <td class="overall-rank">0</td>
+            </tr>
+          <tr>
+                <td>20</td>
+                <td contenteditable="true">Student 20</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem1">0</td>
+                <td class="avg-sem1">0</td>
+                <td class="rank-sem1">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem2">0</td>
+                <td class="avg-sem2">0</td>
+                <td class="rank-sem2">0</td>
+                <td class="overall-avg">0</td>
+                <td class="overall-rank">0</td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <td contenteditable="true">Student 21</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem1">0</td>
+                <td class="avg-sem1">0</td>
+                <td class="rank-sem1">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem2">0</td>
+                <td class="avg-sem2">0</td>
+                <td class="rank-sem2">0</td>
+                <td class="overall-avg">0</td>
+                <td class="overall-rank">0</td>
+            </tr>
+          <tr>
+                <td>22</td>
+                <td contenteditable="true">Student 22</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem1">0</td>
+                <td class="avg-sem1">0</td>
+                <td class="rank-sem1">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem2">0</td>
+                <td class="avg-sem2">0</td>
+                <td class="rank-sem2">0</td>
+                <td class="overall-avg">0</td>
+                <td class="overall-rank">0</td>
+            </tr>
+          <tr>
+                <td>23</td>
+                <td contenteditable="true">Student 23</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem1">0</td>
+                <td class="avg-sem1">0</td>
+                <td class="rank-sem1">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem2">0</td>
+                <td class="avg-sem2">0</td>
+                <td class="rank-sem2">0</td>
+                <td class="overall-avg">0</td>
+                <td class="overall-rank">0</td>
+            </tr>
+          <tr>
+                <td>24</td>
+                <td contenteditable="true">Student 24</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem1">0</td>
+                <td class="avg-sem1">0</td>
+                <td class="rank-sem1">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem2">0</td>
+                <td class="avg-sem2">0</td>
+                <td class="rank-sem2">0</td>
+                <td class="overall-avg">0</td>
+                <td class="overall-rank">0</td>
+            </tr>
+            <tr>
+                <td>25</td>
+                <td contenteditable="true">Student 25</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem1">0</td>
+                <td class="avg-sem1">0</td>
+                <td class="rank-sem1">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem2">0</td>
+                <td class="avg-sem2">0</td>
+                <td class="rank-sem2">0</td>
+                <td class="overall-avg">0</td>
+                <td class="overall-rank">0</td>
+            </tr>
+          <tr>
+                <td>26</td>
+                <td contenteditable="true">Student 26</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem1">0</td>
+                <td class="avg-sem1">0</td>
+                <td class="rank-sem1">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem2">0</td>
+                <td class="avg-sem2">0</td>
+                <td class="rank-sem2">0</td>
+                <td class="overall-avg">0</td>
+                <td class="overall-rank">0</td>
+            </tr>
+          <tr>
+                <td>27</td>
+                <td contenteditable="true">Student 27</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem1">0</td>
+                <td class="avg-sem1">0</td>
+                <td class="rank-sem1">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem2">0</td>
+                <td class="avg-sem2">0</td>
+                <td class="rank-sem2">0</td>
+                <td class="overall-avg">0</td>
+                <td class="overall-rank">0</td>
+            </tr>
+          <tr>
+                <td>28</td>
+                <td contenteditable="true">Student 28</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem1">0</td>
+                <td class="avg-sem1">0</td>
+                <td class="rank-sem1">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem2">0</td>
+                <td class="avg-sem2">0</td>
+                <td class="rank-sem2">0</td>
+                <td class="overall-avg">0</td>
+                <td class="overall-rank">0</td>
+            </tr>
+            <tr>
+                <td>29</td>
+                <td contenteditable="true">Student 29</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem1">0</td>
+                <td class="avg-sem1">0</td>
+                <td class="rank-sem1">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem2">0</td>
+                <td class="avg-sem2">0</td>
+                <td class="rank-sem2">0</td>
+                <td class="overall-avg">0</td>
+                <td class="overall-rank">0</td>
+            </tr>
+          <tr>
+                <td>30</td>
+                <td contenteditable="true">Student 30</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem1">0</td>
+                <td class="avg-sem1">0</td>
+                <td class="rank-sem1">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem2">0</td>
+                <td class="avg-sem2">0</td>
+                <td class="rank-sem2">0</td>
+                <td class="overall-avg">0</td>
+                <td class="overall-rank">0</td>
+            </tr>
+          <tr>
+                <td>31</td>
+                <td contenteditable="true">Student 31</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem1">0</td>
+                <td class="avg-sem1">0</td>
+                <td class="rank-sem1">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td contenteditable="true">0</td>
+                <td class="total-sem2">0</td>
+                <td class="avg-sem2">0</td>
+                <td class="rank-sem2">0</td>
+                <td class="overall-avg">0</td>
+                <td class="overall-rank">0</td>
+            </tr>
+            <!-- Repeat for more students -->
+        </tbody>
+    </table>
+    <button onclick="calculateResults()">View Results</button>
+    <button onclick="downloadPDF()">Download PDF</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script.js">
+        
+    </script>
+</body>
+</html>
